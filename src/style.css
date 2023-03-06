@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body {
+    background: url(./image/maxresdefault.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+
+
+.box {
+    display: flex;
+    justify-content: space-around;
+}
+
+.serch-boxes {
+    width: 100%;
+}
+
+.card-weather {
+    width: 100%;
+    backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.4);
+    color: white;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    text-align: center;
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+
+.or-box {
+    height: 50px;
+    border: 2px solid white;
+    margin-right: 30px;
+}
+
+.box .list-box {
+    margin-right: 30px;
+    font-size: 22px;
+}
+
+.degree {
+    font-size: 66px;
+    padding-left: 32px;
+    padding-top: 20px;
+}
+
+input {
+    padding: 10px 40px 10px 10px;
+    border: none;
+    outline: none;
+    border-radius: 6px 0 0 6px;
+    -webkit-border-radius: 6px 0 0 6px;
+    -moz-border-radius: 6px 0 0 6px;
+    -ms-border-radius: 6px 0 0 6px;
+    -o-border-radius: 6px 0 0 6px;
+    backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.4);
+    color: white;
+}
+
+input::placeholder {
+    color: white;
+}
+
+input:focus {
+    backdrop-filter: blur(4px);
+    background: rgba(182, 175, 175, 0.4);
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.btn-search {
+    padding: 10px 30px;
+    border-radius: 0 6px 6px 0;
+    margin-left: 20px;
+    -webkit-border-radius: 0 6px 6px 0;
+    -moz-border-radius: 0 6px 6px 0;
+    -ms-border-radius: 0 6px 6px 0;
+    -o-border-radius: 0 6px 6px 0;
+    backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.4);
+    color: white;
+    border: none;
+}
+
+
+.btn-search:hover {
+    backdrop-filter: blur(4px);
+    background: rgba(118, 107, 107, 0.4);
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+
+
+@media (max-width: 575px) {
+    input {
+        padding: 9px 2px 10px 10px;
+        width: 100%;
+        border: none;
+        outline: none;
+        border-radius: 6px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
+        -webkit-backdrop-filter: blur(4px);
+        backdrop-filter: blur(4px);
+        background: rgba(255, 255, 255, 0.4);
+        color: white;
+}
+
+    .btn-search {
+        padding: 10px 11px;
+        border-radius: 10px;
+        margin: 0;
+        width: 100%;
+        backdrop-filter: blur(4px);
+        background: rgba(255, 255, 255, 0.4);
+        color: white;
+        border: none;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+}
+}
